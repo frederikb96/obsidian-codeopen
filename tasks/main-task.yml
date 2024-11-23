@@ -1,0 +1,17 @@
+---
+- name: Copy template file with password variable
+  template:
+    src: templates/file.j2
+    dest: /tmp/rendered_file.txt
+
+- name: Copy static script file
+  copy:
+    src: files/script.sh
+    dest: /tmp/script.sh
+    mode: '0755'
+
+- name: Create a directory
+  file:
+    path: /tmp/example_dir
+    state: directory
+    mode: '0755'
