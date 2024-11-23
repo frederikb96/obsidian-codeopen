@@ -1,4 +1,4 @@
-# Obsidian FolderCode Open Integration
+# Obsidian FolderCode Open Integration with Visual Studio Code
 
 This repository automates the addition of a new application via a `.desktop` file and registers the `.foldercode` extension. This allows you to quickly create and open a folder in Visual Studio Code based on a `.foldercode` file. It's particularly useful for seamlessly integrating this functionality with tools like Obsidian for note-taking and project management. The `.foldercode` file is used as a very lightweight and sustainable way to let Obsidian reliably create and open folders in Visual Studio Code.
 
