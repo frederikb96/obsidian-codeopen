@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Obsidian CodeOpen
-Exec=bash -c 'if [ -n "$1" ]; then mdir="$(dirname "$1")"; mbase="$(basename "$1" .codeopen)"; newdir="${mdir}/${mbase}"; mkdir -p "$newdir"; code "$newdir"; else code; fi' _ %f
+Exec=bash -c 'if [ -n "$1" ]; then mdir="$(dirname "$1")"; mbase="$(basename "$1" .codeopen)"; newdir="${mdir}/${mbase}"; mkdir -p "$newdir"; gtk-launch code "$newdir"; else gtk-launch code; fi' _ %f
 Type=Application
 Terminal=false
 MimeType=application/x-codeopen;
