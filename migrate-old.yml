@@ -1,0 +1,19 @@
+---
+# This playbook is used to migrate the old FolderCode installation to the new one by removing the old files and updating the MIME and desktop databases.
+- hosts: all
+  tasks:
+    - name: Remove .desktop file for FolderCode
+      file:
+        path: "{{ ansible_user_dir }}/.local/share/applications/foldercode.desktop"
+        state: absent
+
+    - name: Remove MIME type XML file
+      file:
+        path: "{{ ansible_user_dir }}/.local/share/mime/packages/foldercode.xml"
+        state: absent
+
+    - name: Update MIME database
+      shell: update-mime-database "{{ ansible_user_dir }}/.local/share/mime"
+
+    - name: Update desktop database
+      shell: update-desktop-database "{{ ansible_user_dir }}/.local/share/applications"

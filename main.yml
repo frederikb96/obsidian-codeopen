@@ -6,10 +6,10 @@
         path: ~/.local/share/applications
         state: directory
 
-    - name: Copy .desktop file for FolderCode
+    - name: Copy .desktop file for CodeOpen
       copy:
-        src: files/foldercode.desktop
-        dest: ~/.local/share/applications/foldercode.desktop
+        src: files/codeopen.desktop
+        dest: ~/.local/share/applications/codeopen.desktop
 
     - name: Ensure MIME packages directory exists
       file:
@@ -18,8 +18,8 @@
 
     - name: Copy MIME type XML file
       copy:
-        src: files/foldercode.xml
-        dest: ~/.local/share/mime/packages/foldercode.xml
+        src: files/codeopen.xml
+        dest: ~/.local/share/mime/packages/codeopen.xml
 
     - name: Update MIME database
       shell: update-mime-database ~/.local/share/mime
@@ -27,5 +27,5 @@
     - name: Update desktop database
       shell: update-desktop-database ~/.local/share/applications
 
-    - name: Register .foldercode file type with FolderCode application
-      shell: xdg-mime default foldercode.desktop application/x-foldercode
+    - name: Register .codeopen file type with CodeOpen application
+      shell: xdg-mime default codeopen.desktop application/x-codeopen

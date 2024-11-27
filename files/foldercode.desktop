@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=FolderCode
-Exec=bash -c 'if [ -n "$1" ]; then mdir="$(dirname "$1")"; mbase="$(basename "$1" .foldercode)"; newdir="${mdir}/${mbase}"; mkdir -p "$newdir"; code "$newdir"; else code; fi' _ %f
-Type=Application
-Terminal=false
-MimeType=application/x-foldercode;
-Categories=Development;Editor;

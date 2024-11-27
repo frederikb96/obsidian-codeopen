@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-    <mime-type type="application/x-foldercode">
-        <comment>FolderCode</comment>
-        <glob pattern="*.foldercode"/>
+    <mime-type type="application/x-codeopen">
+        <comment>Obsidian CodeOpen</comment>
+        <glob pattern="*.codeopen"/>
     </mime-type>
 </mime-info>
