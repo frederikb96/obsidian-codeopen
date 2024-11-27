@@ -1,6 +1,6 @@
-# Obsidian CodeOpen Open Integration with Visual Studio Code
+# Obsidian CodeOpen Integration for Visual Studio Code
 
-This repository automates the addition of a new application via a `.desktop` file and registers the `.codeopen` extension. This allows you to quickly create and open a folder in Visual Studio Code based on a `.codeopen` file. It's particularly useful for seamlessly integrating this functionality with tools like Obsidian for note-taking and project management. The `.codeopen` file is used as a very lightweight and sustainable way to let Obsidian reliably create and open folders in Visual Studio Code.
+This repository automates the addition of a new application via a `.desktop` file and registers the `.codeopen` extension. This allows you to quickly create and open a folder in Visual Studio Code based on a `.codeopen` file. It's particularly useful for seamlessly integrating this functionality with tools like Obsidian for note-taking and project management. The `.codeopen` file is used as a very lightweight and sustainable way to let Obsidian reliably create and open folders in Visual Studio Code. **Linux only**
 
 ## Usage
 
