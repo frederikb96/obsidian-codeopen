@@ -31,7 +31,7 @@ Create a new template file in Obsidian with the following content:
 
 ```javascript
 <%*
-const userInput = await tp.system.prompt("Enter foldername");
+const userInput = await tp.system.prompt("Enter Code Project Name");
 if (userInput) {
     
     // Create the full filename by appending the user input with the extension
